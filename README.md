@@ -1,42 +1,42 @@
 ## Walmart Sales Analysis: SQL Exploration & Power BI Dashboard
 
-[cite_start]An end-to-end data analytics project performing sales and profit analysis on a Walmart retail dataset[cite: 2, 9]. [cite_start]The workflow covers raw data cleaning and standardization in Python, complex business question exploration using SQL (SQLite), and the design of an interactive executive dashboard in Power BI[cite: 4, 10, 11].
+An end-to-end data analytics project performing sales and profit analysis on a Walmart retail dataset[cite: 2, 9]. [cite_start]The workflow covers raw data cleaning and standardization in Python, complex business question exploration using SQL (SQLite), and the design of an interactive executive dashboard in Power BI.
 
 ### 📊 Project Overview & Architecture
 * [cite_start]**Dataset:** 9,969 transactions across 100 branches and 98 cities in Texas, spanning January 2019 to December 2023[cite: 3, 17].
-* [cite_start]**Core Goal:** To build a robust data pipeline that transforms raw transactional data into actionable business insights—identifying top profit centers, customer behavior patterns, and critical revenue risks[cite: 12, 13].
+* [cite_start]**Core Goal:** To build a robust data pipeline that transforms raw transactional data into actionable business insights—identifying top profit centers, customer behavior patterns, and critical revenue risks.
 
 ---
 
 ### 🛠️ Tech Stack & Skills Demonstrated
-* **Data Cleaning (Python/pandas):** Handled missing values, removed duplicate invoice records, standardized date types (`DD/MM/YY`), trimmed whitespace, and cast fields to correct data types[cite: 15, 31, 32, 33, 34, 35, 36].
-* **SQL Analysis (SQLite):** Developed 9 business-driven queries using aggregate functions, `GROUP BY` optimization, `CASE` statements, date parsing via `strftime`, Window Functions (`RANK() OVER (PARTITION BY ...)`), and Multi-CTE Joins[cite: 15, 39, 42, 46, 47, 48].
-* **Data Visualization (Power BI):** Formatted advanced interactive dashboards using KPI summary cards, customized column/bar charts, stacked distribution charts, and conditional alert tables[cite: 15, 77].
+* **Data Cleaning (Python/pandas):** Handled missing values, removed duplicate invoice records, standardized date types (`DD/MM/YY`), trimmed whitespace, and cast fields to correct data types.
+* **SQL Analysis (SQLite):** Developed 9 business-driven queries using aggregate functions, `GROUP BY` optimization, `CASE` statements, date parsing via `strftime`, Window Functions (`RANK() OVER (PARTITION BY ...)`), and Multi-CTE Joins.
+* **Data Visualization (Power BI):** Formatted advanced interactive dashboards using KPI summary cards, customized column/bar charts, stacked distribution charts, and conditional alert tables.
 
 ---
 
 ### 📈 Key Insights & Business Findings
 
-* **Top Profit Drivers:** *Fashion accessories* and *Home and lifestyle* dominate profitability, with each contributing approximately **\$192K** to the total profit[cite: 54].
-* **Lowest Performing Category:** *Health and beauty* generated the lowest profit at roughly **\$19K**[cite: 55]. Actionable steps include collaborating with marketing to boost category visibility and optimizing pricing models[cite: 57, 58, 59].
-* **Transaction Habits:** Credit cards lead consumer preference (~4,300 transactions), closely followed by Ewallets (~3,900 transactions)[cite: 51]. Together, they represent over **80%** of all sales payment methods[cite: 52].
-* **Peak Traffic Windows:** Store transaction volume spikes heavily in the **Afternoon** across tracked branches, while Mornings consistently show the lowest volume, highlighting an opening for morning-specific promotional campaigns[cite: 61, 65].
-* **Priority Risk Alerts (YoY Revenue Decline):** Advanced CTE metrics flagged severe 2022–2023 revenue drops in specific branches, led by `WALM045` with a **62.62%** drop and `WALM047` with a **58.58%** decline, signaling areas requiring immediate operational investigation[cite: 68, 69, 70, 71].
+* **Top Profit Drivers:** *Fashion accessories* and *Home and lifestyle* dominate profitability, with each contributing approximately **\$192K** to the total profit.
+* **Lowest Performing Category:** *Health and beauty* generated the lowest profit at roughly **\$19K**[cite: 55]. Actionable steps include collaborating with marketing to boost category visibility and optimizing pricing models.
+* **Transaction Habits:** Credit cards lead consumer preference (~4,300 transactions), closely followed by Ewallets (~3,900 transactions). Together, they represent over **80%** of all sales payment methods.
+* **Peak Traffic Windows:** Store transaction volume spikes heavily in the **Afternoon** across tracked branches, while Mornings consistently show the lowest volume, highlighting an opening for morning-specific promotional campaigns.
+* **Priority Risk Alerts (YoY Revenue Decline):** Advanced CTE metrics flagged severe 2022–2023 revenue drops in specific branches, led by `WALM045` with a **62.62%** drop and `WALM047` with a **58.58%** decline, signaling areas requiring immediate operational investigation.
 
 ---
 
 ### 🖥️ Dashboard Preview
-The final interactive Power BI dashboard features high-level KPI tracking showing **\$1.21M Total Revenue**, **\$476K Total Profit**, and **23.48K total units sold** alongside cross-filtering visual components[cite: 19, 21, 23, 76, 77]:
+The final interactive Power BI dashboard features high-level KPI tracking showing **\$1.21M Total Revenue**, **\$476K Total Profit**, and **23.48K total units sold** alongside cross-filtering visual components:
 
-* **KPI Summary Cards:** Top-line performance overview[cite: 148].
-* **Profit by Category:** Distinct breakdown of product vertical success[cite: 148].
-* **Transactions by Payment Method:** Volume distribution across Credit, Ewallet, and Cash[cite: 148].
-* **Sales by Time of Day:** Stacked visual map outlining hourly volume shifts per branch[cite: 148].
-* **Revenue Decline Table:** High-alert tracking of underperforming locations[cite: 148].
+* **KPI Summary Cards:** Top-line performance overview.
+* **Profit by Category:** Distinct breakdown of product vertical success.
+* **Transactions by Payment Method:** Volume distribution across Credit, Ewallet, and Cash.
+* **Sales by Time of Day:** Stacked visual map outlining hourly volume shifts per branch.
+* **Revenue Decline Table:** High-alert tracking of underperforming locations.
 
 ---
 
 ### 🚀 How to Reproduce
-1. **Clean the Data:** Run the `data_cleaning.py` notebook to transform the raw source file into `cleaned_walmart_data.csv`[cite: 37, 159].
-2. **Execute Queries:** Load `cleaned_walmart_data.csv` into any SQLite client and execute the numbered steps (`Q1` through `Q9`) inside `queries.sql`[cite: 156, 157].
-3. **Open the Dashboard:** Open `Walmart_Sales_Dashboard.pbix` in Power BI Desktop and change the data source path to point to your local `cleaned_walmart_data.csv`[cite: 158].
+1. **Clean the Data:** Run the `data_cleaning.py` notebook to transform the raw source file into `cleaned_walmart_data.csv`.
+2. **Execute Queries:** Load `cleaned_walmart_data.csv` into any SQLite client and execute the numbered steps (`Q1` through `Q9`) inside `queries.sql`.
+3. **Open the Dashboard:** Open `Walmart_Sales_Dashboard.pbix` in Power BI Desktop and change the data source path to point to your local `cleaned_walmart_data.csv`.
