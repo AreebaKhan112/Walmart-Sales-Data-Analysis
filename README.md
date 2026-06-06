@@ -1,10 +1,10 @@
 ## Walmart Sales Analysis: SQL Exploration & Power BI Dashboard
 
-An end-to-end data analytics project performing sales and profit analysis on a Walmart retail dataset[cite: 2, 9]. [cite_start]The workflow covers raw data cleaning and standardization in Python, complex business question exploration using SQL (SQLite), and the design of an interactive executive dashboard in Power BI.
+An end-to-end data analytics project performing sales and profit analysis on a Walmart retail dataset.The workflow covers raw data cleaning and standardization in Python, complex business question exploration using SQL (SQLite), and the design of an interactive executive dashboard in Power BI.
 
 ### 📊 Project Overview & Architecture
-* [cite_start]**Dataset:** 9,969 transactions across 100 branches and 98 cities in Texas, spanning January 2019 to December 2023[cite: 3, 17].
-* [cite_start]**Core Goal:** To build a robust data pipeline that transforms raw transactional data into actionable business insights—identifying top profit centers, customer behavior patterns, and critical revenue risks.
+* **Dataset:** 9,969 transactions across 100 branches and 98 cities in Texas, spanning January 2019 to December 2023.
+* **Core Goal:** To build a robust data pipeline that transforms raw transactional data into actionable business insights—identifying top profit centers, customer behavior patterns, and critical revenue risks.
 
 ---
 
@@ -18,7 +18,7 @@ An end-to-end data analytics project performing sales and profit analysis on a W
 ### 📈 Key Insights & Business Findings
 
 * **Top Profit Drivers:** *Fashion accessories* and *Home and lifestyle* dominate profitability, with each contributing approximately **\$192K** to the total profit.
-* **Lowest Performing Category:** *Health and beauty* generated the lowest profit at roughly **\$19K**[cite: 55]. Actionable steps include collaborating with marketing to boost category visibility and optimizing pricing models.
+* **Lowest Performing Category:** *Health and beauty* generated the lowest profit at roughly **\$19K**. Actionable steps include collaborating with marketing to boost category visibility and optimizing pricing models.
 * **Transaction Habits:** Credit cards lead consumer preference (~4,300 transactions), closely followed by Ewallets (~3,900 transactions). Together, they represent over **80%** of all sales payment methods.
 * **Peak Traffic Windows:** Store transaction volume spikes heavily in the **Afternoon** across tracked branches, while Mornings consistently show the lowest volume, highlighting an opening for morning-specific promotional campaigns.
 * **Priority Risk Alerts (YoY Revenue Decline):** Advanced CTE metrics flagged severe 2022–2023 revenue drops in specific branches, led by `WALM045` with a **62.62%** drop and `WALM047` with a **58.58%** decline, signaling areas requiring immediate operational investigation.
