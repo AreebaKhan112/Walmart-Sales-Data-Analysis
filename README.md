@@ -27,6 +27,7 @@ An end-to-end data analytics project performing sales and profit analysis on a W
 
 ### 🖥️ Dashboard Preview
 The final interactive Power BI dashboard features high-level KPI tracking showing **\$1.21M Total Revenue**, **\$476K Total Profit**, and **23.48K total units sold** alongside cross-filtering visual components:
+<img width="2000" height="2588" alt="image" src="https://github.com/user-attachments/assets/a88e98a3-c209-49ff-8888-f36708d8216b" />
 
 * **KPI Summary Cards:** Top-line performance overview.
 * **Profit by Category:** Distinct breakdown of product vertical success.
